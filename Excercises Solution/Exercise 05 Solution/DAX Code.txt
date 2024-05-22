@@ -1,0 +1,14 @@
+Creating Category Table:
+=========================
+
+
+Category = GROUPBY ('Product', 'Product'[Category ID], 'Product'[Category])
+
+
+
+Creating Subcategory Table:
+==============================
+
+
+
+Subcategory = GROUPBY ('Product', 'Product'[Subcategory ID], 'Product'[Category ID], 'Product'[Subcategory]) 
